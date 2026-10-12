@@ -1,0 +1,197 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI,sans-serif;
+}
+
+body{
+background:#faf5ff;
+}
+
+header{
+background:#581c87;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+}
+
+header h1{
+color:white;
+}
+
+.back-btn{
+text-decoration:none;
+color:white;
+background:#ec4899;
+padding:10px 18px;
+border-radius:8px;
+}
+
+.hero{
+min-height:80vh;
+
+background:
+linear-gradient(
+rgba(88,28,135,.75),
+rgba(88,28,135,.75)),
+url("g.jpg");
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+text-align:center;
+color:white;
+}
+
+.hero-content h1{
+font-size:60px;
+margin:20px 0;
+}
+
+.hero button{
+padding:14px 30px;
+border:none;
+border-radius:30px;
+
+background:#ec4899;
+color:white;
+}
+
+.courses{
+padding:80px 8%;
+}
+
+.course-container{
+display:grid;
+grid-template-columns:
+repeat(auto-fit,minmax(320px,1fr));
+
+gap:30px;
+}
+
+.course-card{
+background:white;
+border-radius:20px;
+overflow:hidden;
+
+box-shadow:
+0 10px 30px rgba(0,0,0,.1);
+
+transition:.4s;
+}
+
+.course-card:hover{
+transform:translateY(-10px);
+}
+
+.course-card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.top-tag{
+position:absolute;
+background:#ec4899;
+color:white;
+
+padding:8px 14px;
+margin:15px;
+
+border-radius:20px;
+}
+
+.course-card h3,
+.course-card p,
+.rating,
+.price{
+padding:10px 20px;
+}
+
+.price{
+font-size:28px;
+font-weight:bold;
+color:#ec4899;
+}
+
+.cart{
+width:90%;
+margin:15px 5%;
+
+padding:12px;
+
+border:none;
+border-radius:10px;
+
+background:#ec4899;
+color:white;
+}
+
+.skills,
+.roadmap{
+padding:70px 8%;
+text-align:center;
+}
+
+.skill-box span,
+.step{
+display:inline-block;
+
+padding:12px 20px;
+margin:10px;
+
+background:white;
+
+border-radius:30px;
+
+box-shadow:
+0 5px 15px rgba(0,0,0,.08);
+}
+
+.stats{
+background:#581c87;
+color:white;
+
+display:grid;
+grid-template-columns:
+repeat(auto-fit,minmax(200px,1fr));
+
+padding:60px 8%;
+
+text-align:center;
+}
+
+.stats h1{
+color:#f9a8d4;
+}
+
+footer{
+background:#3b0764;
+color:white;
+text-align:center;
+padding:30px;
+}
+
+@media(max-width:768px){
+
+.hero-content h1{
+font-size:36px;
+}
+
+.course-container{
+grid-template-columns:1fr;
+}
+
+header{
+flex-direction:column;
+gap:15px;
+}
+
+}
